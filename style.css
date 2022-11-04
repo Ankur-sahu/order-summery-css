@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(220, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+#wraper{
+    width: 32%;
+    height: 530px;
+    padding: 0px;
+    position: absolute;
+    left: 450px;
+    top: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+  }
+#summery-box{
+    width: 100%;
+    height: 318px;
+    padding: 5px 10px 0px;
+    margin-top: -5px;
+    background-color: white;
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#summery-box > p{
+    width: 70%;
+    margin-left: 15%;
+}
+.plan-desc{
+    display: block;
+    width: 90%;
+    height: 80px;
+    padding: 0px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(236, 248, 248);
+    position: relative;
+}
+
+.plan-desc div{
+    float: left;
+    margin: 12px;
+}
+.music{
+    border-radius: 50%;
+    background-color: rgb(200, 221, 221);
+}
+.price { 
+    width: 50%;
+    text-align: left;
+    padding-top: 10px;
+    color: rgb(53, 52, 52);
+}
+.price *{
+    margin: 0px;
+    padding: 0px;
+}
+.change-plan{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+.change-plan >b >a:hover{
+    text-decoration: none;
+}
+
+#btn{
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(47, 47, 214);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(122, 122, 206);
+}
+#summery-box > b > a{
+    text-decoration: none;
+    color: rgb(68, 68, 156);
+}
+#summery-box > b > a:hover{
+    color: black;
+}
+@media (max-width :480px) {
+    
+    #main{
+        height: 570px;
+    }
+    #wraper {
+    
+    width: 80%;
+    height: 430px;
+    left: 10%;
+    top: 72px;
+    
+    }
+    #summery-box > *{
+        margin-bottom: 10px;
+    }
+    .plan-desc{
+        
+        width: 96%;
+        height: 80px;
+        padding: 0px;
+        margin-left: 8px;
+        
+    }
+    .price { 
+        width: 40%;
+    }
+    .plan-desc div {
+        margin: 10px 5px 0px 2px;
+    }
+    #summery-box > p{
+        width: 80%;
+        margin: 0px 0px 15px 35px;
+    }
+}
+@media (max-width :300px) {
+    body{
+        font-size: small;
+    }
+    #summery-box > p{
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+}
